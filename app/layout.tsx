@@ -13,6 +13,7 @@ const mono = JetBrains_Mono({
 });
 
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { GlobalThemeToggle } from "@/components/GlobalThemeToggle";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -25,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           disableTransitionOnChange
         >
           {children}
+          <GlobalThemeToggle />
         </ThemeProvider>
       </body>
     </html>

@@ -163,7 +163,6 @@ export default function AppLayout({ children }: { children: ReactNode }) {
             
             <div className="w-px h-6 bg-border mx-1" />
             
-            <ThemeToggle />
             <UserMenu />
           </div>
         </header>

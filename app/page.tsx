@@ -19,7 +19,6 @@ import {
   Search,
   Gauge
 } from "lucide-react";
-import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function LandingPage() {
   const containerVariants = {
@@ -75,11 +74,10 @@ export default function LandingPage() {
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-4"
           >
-            <ThemeToggle />
-            <Link href="/dashboard" className="hidden sm:block text-sm font-bold text-foreground px-5 py-2.5 rounded-full hover:bg-accent transition-all">
+            <Link href="/login" className="hidden sm:block text-sm font-bold text-foreground px-5 py-2.5 rounded-full hover:bg-accent transition-all">
               Log in
             </Link>
-            <Link href="/dashboard" className="bg-foreground text-background px-6 py-2.5 rounded-full text-sm font-bold hover:bg-rose-600 hover:text-white transition-all shadow-xl shadow-foreground/10 hover:shadow-rose-500/20 hover:scale-105 active:scale-95">
+            <Link href="/register" className="bg-foreground text-background px-6 py-2.5 rounded-full text-sm font-bold hover:bg-rose-600 hover:text-white transition-all shadow-xl shadow-foreground/10 hover:shadow-rose-500/20 hover:scale-105 active:scale-95">
               Get Started Free
             </Link>
           </motion.div>
@@ -131,7 +129,7 @@ export default function LandingPage() {
               catchy hooks, and creative thumbnail ideas in seconds.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-              <Link href="/dashboard" className="w-full sm:w-auto bg-foreground text-background px-8 py-4 rounded-2xl text-base font-bold flex items-center justify-center gap-2 hover:bg-rose-600 hover:text-white transition-all shadow-2xl shadow-foreground/5 hover:shadow-rose-500/20 group">
+              <Link href="/register" className="w-full sm:w-auto bg-foreground text-background px-8 py-4 rounded-2xl text-base font-bold flex items-center justify-center gap-2 hover:bg-rose-600 hover:text-white transition-all shadow-2xl shadow-foreground/5 hover:shadow-rose-500/20 group">
                 Start Generating Now
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -326,7 +324,7 @@ export default function LandingPage() {
            <div className="relative z-10">
               <h2 className="text-4xl lg:text-5xl font-bold text-white mb-8">Ready to transform your content?</h2>
               <p className="text-slate-400 text-lg mb-12 max-w-2xl mx-auto">Join 50k+ creators using ScriptAI to save time and grow faster.</p>
-              <Link href="/dashboard" className="bg-white text-slate-900 px-10 py-5 rounded-2xl text-lg font-bold hover:bg-rose-500 hover:text-white transition-all inline-flex items-center gap-3 shadow-xl">
+              <Link href="/register" className="bg-white text-slate-900 px-10 py-5 rounded-2xl text-lg font-bold hover:bg-rose-500 hover:text-white transition-all inline-flex items-center gap-3 shadow-xl">
                  Get Started for Free
                  <ArrowRight size={20} />
               </Link>
